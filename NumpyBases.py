@@ -68,7 +68,8 @@ randarr.argmax()    #7
 randarr.min()       #2
 randarr.argmin()    #9
 
-a =randarr.dtype
+#récupère le type de donnée
+randarr.dtype       #int32
 
 
 
