@@ -29,6 +29,11 @@ df["B"] = df["B"].fillna(value=df["B"].mean())  #     A    B   C
                                                 #1  2.0  6.5  20
                                                 #2  NaN  6.5  30
                                                 #3  4.0  8.0  40
-                                                
-df = df.fillna(df.mean())
+
+#Permet de remplacer toutes les valeurs manquante par la moyenne                                           
+df = df.fillna(df.mean())                       #          A    B   C
+                                                #0  1.000000  5.0  10
+                                                #1  2.000000  6.5  20
+                                                #2  2.333333  6.5  30
+                                                #3  4.000000  8.0  40
 print(df)
