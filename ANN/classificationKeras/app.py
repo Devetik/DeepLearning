@@ -28,7 +28,9 @@ from keras.layers import Dense, Dropout
 
 model = Sequential()
 model.add(Dense(units=30, activation="relu"))
+model.add(Dropout(0.5))
 model.add(Dense(units=15, activation="relu"))
+model.add(Dropout(0.5))
 model.add(Dense(units=1, activation="sigmoid"))
 
 model.compile(loss="binary_crossentropy", optimizer="adam")
